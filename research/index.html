@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research - Noodle Lab</title>
   <meta name="description" content="Noodle Lab -- Research">
-  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/research/">
-<link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/images/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/research/">
+<link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico">
 
 
 
@@ -28,16 +28,16 @@
 		<span class="icon-bar"></span>
 	  </button>
 	
-    <a class="navbar-brand" href="http://localhost:4000/"><b>Noodle Lab @ UTA CSE</b></a>
+    <a class="navbar-brand" href="/"><b>Noodle Lab @ UTA CSE</b></a>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="http://localhost:4000/">Home</a></li>	
-		<li><a href="http://localhost:4000/team">Team</a></li>
-		<li><a href="http://localhost:4000/research">Research</a></li>
-		<!-- <li><a href="http://localhost:4000/vacancies">Vacancies</a></li> -->
-		<li><a href="http://localhost:4000/publications">Publications</a></li>
-		<li><a href="http://localhost:4000/about">About PI</a></li>
+		<li><a href="/">Home</a></li>	
+		<li><a href="/team">Team</a></li>
+		<li><a href="/research">Research</a></li>
+		<!-- <li><a href="/vacancies">Vacancies</a></li> -->
+		<li><a href="/publications">Publications</a></li>
+		<li><a href="/about">About PI</a></li>
 	  </ul>
 	</div>
   </div>
@@ -51,18 +51,18 @@
 
 <p>The paradigm shift towards the Internet of Things (IoT), edge computing, and the rise of mobile applications in various domains has necessitated the development and deployment of efficient AI models on devices. This is a significant shift from the traditional cloud-centric model, where computationally heavy models run on powerful remote servers. There are numerous challenges associated with implementing on-device AI, notably the constrained computational, memory, and energy resources, coupled with the demand for real-time processing and data privacy. Our research aims to address these challenges by focusing on improving the efficiency and trustworthiness of AI models and their application on-device, through the integration of software and hardware co-design.</p>
 
-<p><img src="http://localhost:4000/images/respic/research-overview.png" alt="" style="width: 75%;" /></p>
+<p><img src="/images/respic/research-overview.png" alt="" style="width: 75%;" /></p>
 
 <p>Our primary objective is to conduct rigorous research and development focusing on integrating software and hardware co-design principles in the AI ecosystem. The aim is to create trustworthy, efficient, and adaptable AI models that can operate effectively within the limited resources of on-device platforms, then democratizing AI to real-world on-device applications. Our research draws upon methodologies from mathematical tools, machine learning, computer architecture, and high-performance computing. We specifically build the general framework of software/hardware co-design for efficient and trustworthy AI based on higher-order tensor decomposition and optimization algorithms, then apply the corresponding AI models to on-device applications.</p>
 
 <p>Here are some themes and techniques that we work on:</p>
 
-<p><strong>AI Model Optimization with Higher-Order Tensor Decomposition.</strong> At the heart of the research lies the concept of tensor decomposition, a high-dimensional analogue of matrix factorization. Given that DL models’ parameters inherently form high-dimensional arrays (tensors), we propose exploiting this structure for efficient compression. <img src="http://localhost:4000/images/respic/research-tensor.png" alt="" style="width: 50%; float:right; margin:0px 5px 5px 5px" /> Tensor decomposition allows us to break down large weight tensors into a series of smaller tensors, significantly reducing storage requirements and computational load without drastically impacting the model’s predictive performance. 
+<p><strong>AI Model Optimization with Higher-Order Tensor Decomposition.</strong> At the heart of the research lies the concept of tensor decomposition, a high-dimensional analogue of matrix factorization. Given that DL models’ parameters inherently form high-dimensional arrays (tensors), we propose exploiting this structure for efficient compression. <img src="/images/respic/research-tensor.png" alt="" style="width: 50%; float:right; margin:0px 5px 5px 5px" /> Tensor decomposition allows us to break down large weight tensors into a series of smaller tensors, significantly reducing storage requirements and computational load without drastically impacting the model’s predictive performance. 
 The research encompasses a detailed investigation of various tensor decomposition techniques, including CANDECOMP/PARAFAC (CP), Tucker, and Tensor Train (TT) decompositions, and their application to the weights of convolutional layers in DL models. We propose a systematic methodology, starting from decomposing the original tensors to retraining the compressed model to recover potential performance loss. The study also includes an in-depth examination of the trade-off between the degree of compression and the preserved accuracy.</p>
 
-<p><strong>Hardware-Aware Model Acceleration.</strong> Our research involves developing efficient parallel algorithms for various optimized AI models based on tensor decomposition, tailored for execution on GPU architectures.  <img src="http://localhost:4000/images/respic/research-tucker.png" alt="" style="width: 35%; float:left; margin:0px 5px 5px 5px" /> These algorithms break down the complex tensor decomposition tasks into simpler sub-tasks that can be performed concurrently, thus significantly accelerating the final compressed tensor format models. Our study also improves the scalability of these parallel algorithms concerning tensor dimensions and the GPU’s hardware specifications.</p>
+<p><strong>Hardware-Aware Model Acceleration.</strong> Our research involves developing efficient parallel algorithms for various optimized AI models based on tensor decomposition, tailored for execution on GPU architectures.  <img src="/images/respic/research-tucker.png" alt="" style="width: 35%; float:left; margin:0px 5px 5px 5px" /> These algorithms break down the complex tensor decomposition tasks into simpler sub-tasks that can be performed concurrently, thus significantly accelerating the final compressed tensor format models. Our study also improves the scalability of these parallel algorithms concerning tensor dimensions and the GPU’s hardware specifications.</p>
 
-<p><strong>Software-Hardware Co-Design.</strong> To foster true synergy between AI software and hardware, we develop a co-design framework that simultaneously considers model optimization and hardware constraints. <img src="http://localhost:4000/images/respic/research-tdc.png" alt="" style="width: 50%; float:right; margin:0px 5px 5px 5px" />This holistic approach will ensure a balance between AI model efficiency and hardware capabilities.  In addition to generate highly accurate and compact tensor format DNN models with optimized C++/CUDA code, which can be easily deployed on GPUs for high-performance inference, we also aim to automate the entire efficient software and hardware co-optimization process by determining the proper Tucker ranks based on a target speedup of inference performance.</p>
+<p><strong>Software-Hardware Co-Design.</strong> To foster true synergy between AI software and hardware, we develop a co-design framework that simultaneously considers model optimization and hardware constraints. <img src="/images/respic/research-tdc.png" alt="" style="width: 50%; float:right; margin:0px 5px 5px 5px" />This holistic approach will ensure a balance between AI model efficiency and hardware capabilities.  In addition to generate highly accurate and compact tensor format DNN models with optimized C++/CUDA code, which can be easily deployed on GPUs for high-performance inference, we also aim to automate the entire efficient software and hardware co-optimization process by determining the proper Tucker ranks based on a target speedup of inference performance.</p>
 
 
 </div>
@@ -97,7 +97,7 @@ The research encompasses a detailed investigation of various tensor decompositio
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://localhost:4000/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 
   </body>
