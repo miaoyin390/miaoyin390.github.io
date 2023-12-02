@@ -7639,7 +7639,6 @@ pubtit {
 }
 
 .row ol {
-  margin-top: 0px;
   margin: 12px; /* To remove default bottom margin */
   padding: 12px; /* To remove default left padding */
 }
